@@ -46,17 +46,6 @@ buttons = [
     ], 
 ]
 
-network_name = NETWORK_USERNAME.lower()
-
-try:
-    if network_name == "uchihaxnetwork":
-        HMMM = InlineKeyboardButton(text="❟❛❟ 𝖀𝖈𝖍𝖎𝖍𝖆 ❟❛❟ 𝙉𝙚𝙩𝙬𝙤𝙧𝙠", callback_data="sern_")
-    elif NETWORK:
-        HMMM = InlineKeyboardButton(text=f"{NETWORK}", url=f"https://t.me/{NETWORK_USERNAME}")
-    else:
-        HMMM = None
-except:
-    HMMM = None
 
 def Shikimori_about_callback(update: Update, context: CallbackContext):
     update.effective_message.reply_text(
