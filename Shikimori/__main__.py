@@ -243,12 +243,12 @@ def main():
 
     if WEBHOOK:
         LOGGER.info("Using webhooks.")
-        updater.start_webhook(listen="0.0.0.0", port=PORT, url_path=TOKEN)
+        updater.start_webhook(listen="0.0.0.0", port=PORT, url_path=BOT_TOKEN)
 
         if CERT_PATH:
-            updater.bot.set_webhook(url=URL + TOKEN, certificate=open(CERT_PATH, "rb"))
+            updater.bot.set_webhook(url=URL + BOT_TOKEN, certificate=open(CERT_PATH, "rb"))
         else:
-            updater.bot.set_webhook(url=URL + TOKEN)
+            updater.bot.set_webhook(url=URL + BOT_TOKEN)
 
     else:
         LOGGER.info("Using long polling.")
