@@ -24,7 +24,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 import logging
 import sys
 import time
-from Shikimori.vars import OWNER_ID, DEV_USERS, DEMONS, DRAGONS, TOKEN, WORKERS, API_HASH, API_ID, WOLVES, ARQ_API_KEY, TIGERS
+from Shikimori.vars import OWNER_ID, DEV_USERS, DEMONS, DRAGONS, BOT_TOKEN, WORKERS, API_HASH, API_ID, WOLVES, ARQ_API_KEY, TIGERS
 from pyrogram import Client, filters
 from aiohttp import ClientSession
 import telegram.ext as tg
@@ -75,7 +75,7 @@ print("[INFO]: PYROGRAM CLIENT INITIALIZED")
 # PTB Client
 print("[INFO]: INITIALIZING PTB CLIENT")
 defaults = tg.Defaults(run_async=True)
-updater = tg.Updater(bot_token=TOKEN, workers=WORKERS, use_context=True)
+updater = tg.Updater(BOT_TOKEN, workers=WORKERS, use_context=True)
 dispatcher = updater.dispatcher
 print("[INFO]: PTB CLIENT INITIALIZED")
 
