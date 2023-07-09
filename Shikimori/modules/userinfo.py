@@ -45,7 +45,7 @@ from Shikimori import (
     WOLVES,
     dispatcher,
 )
-from Shikimori.__main__ import TOKEN, USER_INFO
+from Shikimori.__main__ import BOT_TOKEN, USER_INFO
 import Shikimori.modules.sql.userinfo_sql as sql
 from Shikimori.modules.disable import DisableAbleCommandHandler
 from Shikimori.modules.sql.global_bans_sql import is_user_gbanned
