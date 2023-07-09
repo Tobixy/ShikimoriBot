@@ -4,7 +4,7 @@ import os
 ENV = bool(os.environ.get("ENV", True))
 
 if ENV:
-    TOKEN = os.environ.get("BOT_TOKEN", None)
+    BOT_TOKEN = os.environ.get("BOT_TOKEN", None)
 
     try:
         OWNER_ID = int(os.environ.get("OWNER_ID", None))
@@ -99,7 +99,7 @@ if ENV:
 else:
     from Shikimori.config import Development as Config
 
-    TOKEN = Config.TOKEN
+    BOT_TOKEN = Config.BOT_TOKEN
 
     try:
         OWNER_ID = int(Config.OWNER_ID)
