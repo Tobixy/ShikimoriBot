@@ -70,10 +70,10 @@ class Config(object):
     APOD_API_KEY = "awoo"
     REDIS_URL = "awoo"
     ANIME_NAME = "Shikimori's Not Just a Cutie"
-    START_MEDIA = "https://telegra.ph/file/9235d57807362b4e227a3.mp4"
+    START_MEDIA = ""
     BOT_USERNAME = "micchon_shikimori_bot"
     UPDATE_CHANNEL = "Shikimori_bot_Updates"
-    ALIVE_MEDIA = "https://telegra.ph/file/2b04f7812f22b983f8a10.mp4"
+    ALIVE_MEDIA = ""
     BOT_ID = 5169508699
     STATS_IMG = "awoo"
     NETWORK_USERNAME = "VoidxNetwork"
