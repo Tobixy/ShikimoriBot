@@ -37,7 +37,7 @@ from Shikimori.vars import (
     OWNER_ID,
     PORT,
     SUPPORT_CHAT,
-    TOKEN,
+    BOT_TOKEN,
     URL,
     WEBHOOK,)
 from Shikimori import(
