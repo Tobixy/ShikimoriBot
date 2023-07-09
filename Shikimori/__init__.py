@@ -69,7 +69,7 @@ print("[INFO]: ARQ CLIENT INITIALIZED")
 
 # Pyrogram CLient
 print("[INFO]: INITIALIZING PYROGRAM CLIENT")
-pbot = Client("ShikimoriPyro", api_id=API_ID, api_hash=API_HASH, BOT_TOKEN)
+pbot = Client("ShikimoriPyro", api_id=API_ID, api_hash=API_HASH,BOT_TOKEN)
 print("[INFO]: PYROGRAM CLIENT INITIALIZED")
 
 # PTB Client
